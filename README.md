@@ -6,7 +6,7 @@ The files in the Appendix directory are mainly intented for viewing and not for 
 ## Further Training and Inference
 This section requires the user to install Tensorflow and setup the Tensorflow Object Detection Environment, which can be done by following the [installation documentation](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/index.html). 
 Assuming that the Tensorflow is already installed, the 
-markup: *hello
-           *world
+ * hello
+
 
 Welcome to the object detection inference walkthrough!  This notebook will walk you step by step through the process of using a pre-trained model to detect objects in an image. Make sure to follow the [installation instructions](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md) before you start.
