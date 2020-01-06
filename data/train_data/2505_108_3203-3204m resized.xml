@@ -1,0 +1,38 @@
+<annotation>
+	<folder>train</folder>
+	<filename>2505_108_3203-3204m resized.jpg</filename>
+	<path>/home/dennis/prosjektoppgave/core_images/train/2505_108_3203-3204m resized.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>1200</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>core</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>61</xmin>
+			<ymin>134</ymin>
+			<xmax>166</xmax>
+			<ymax>1127</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>core</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>210</xmin>
+			<ymin>135</ymin>
+			<xmax>314</xmax>
+			<ymax>899</ymax>
+		</bndbox>
+	</object>
+</annotation>
