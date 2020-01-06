@@ -20,17 +20,24 @@ This section requires the user to install Tensorflow and setup the Tensorflow Ob
   * Annotating images
   * Creating label map
   * Creating TensorFlow records (xml to csv and csv to tfrecord)
-  
+
+#### further training
 The folders [benchmark](benchmark), [M1](M1) and [M2](M2) are the training directories for three models trained in this project, containing the fine-tuned checkpoints and the model configuration file. When the the Tensorflow object detection environment is installed, these can be downloaded and trained further. Either by using the tfrecords provided in this repository ([data](data)) or with new data. 
 Assuming that both Tensorflow and the object detection environment outlined above has been downloaded and setup, the models in this repository can be trained as follows:
 
-#### further training
   * Download the desired model (e.g. [M2](M2)) and place this folder within the object_detection directory in models/research
   * Download the ([data](data)) directory or alternatively create new data. 
   * Change the paths in the configuration file and run the train-evaluation pipeline as outlined in the methodology chapter of the project report.
   
-The final model can also be used in its current state for making predictions on new core images. The inference graph for the M2 model has been frozen and exported so that inference can be done on new core images, using the modified object detection tutorial [notebook](inference/object_detection_tutorial_modified.ipynb) 
-  
+#### inference and cropping
+The final model can also be used in its current state for making predictions on new core images. The inference graph for the M2 model has been frozen and exported so that inference can be done on new core images, as can be seen in the modified object detection tutorial [notebook](inference/object_detection_tutorial_modified.ipynb). The notebook shows inference performed on three optical core images, and the cropped result using the predicted bounding boxes from M2. The notebook and the inference graph can be downloaded and used to perform inference with the following steps:
+
+  * Download the [inference](inference) folder
+  * Move the [notebook](inference/object_detection_tutorial_modified.ipynb) and the [M2_inference_graph](inference/M2_inference_graph) folder into models/research/object_detection
+  * Add the optical core images to perform inference on in models/research/object_detection/M2_inference_graph/image
+  * Start jupyter notebook from the object_detection directory
+  * Perform inference by running the notebook
+
 
   
 
