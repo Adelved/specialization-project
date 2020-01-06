@@ -5,6 +5,7 @@ The [Appendix](Appendix) directory contains the files and scripts mentioned in M
 The files in the Appendix directory are mainly intented for viewing and not for further use. Thus, the file paths in the configuration files are specific for project structure of the author. 
 ## Further Training and Inference
 This section requires the user to install Tensorflow and setup the Tensorflow Object Detection Environment, which can be done by following the [installation documentation](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/index.html). The following bullet points summarizes the installation steps necessary in order setup the enviornment with links to their locations in the documentation:
+
 * [Install Tensorflow](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html#tensorflow-installation). Both CPU and GPU support is available.
 * [Install Tensorflow Models](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html#tensorflow-models-installation) and complete the following steps in the documentation:
   * Install prerequisites
@@ -19,6 +20,9 @@ This section requires the user to install Tensorflow and setup the Tensorflow Ob
   * Creating label map
   * Creating TensorFlow records (xml to csv and csv to tfrecord)
   
-The folders [benchmark](benchmark), [M1](M1) and [M2](M2) are the training directories for three fine-tuned models created in this project. When the the Tensorflow object detection environment is installed, these can be downloaded and trained further. Either by using the tfrecords provided in this repository ([data](data)) or by using new data. 
+The folders [benchmark](benchmark), [M1](M1) and [M2](M2) are the training directories for three models trained in this project, containing the fine-tuned checkpoints and the model configuration file. When the the Tensorflow object detection environment is installed, these can be downloaded and trained further. Either by using the tfrecords provided in this repository ([data](data)) or with new data. 
+Assuming that both Tensorflow and the object detection environment outlined above has been downloaded and setup, the models in this repository can be trained as follows:
+  * Download the desired model (e.g. [M2](M2)) and place this folder within the object_detection directory in models/research
+  * Download the ([data](data)) directory or alternatively create new data. 
+  * Change the paths in the configuration file and run the train-evaluation pipeline as outlined in the project report.
   
-Welcome to the object detection inference walkthrough!  This notebook will walk you step by step through the process of using a pre-trained model to detect objects in an image. Make sure to follow the [installation instructions](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md) before you start.
