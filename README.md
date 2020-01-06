@@ -19,4 +19,6 @@ This section requires the user to install Tensorflow and setup the Tensorflow Ob
   * Creating label map
   * Creating TensorFlow records (xml to csv and csv to tfrecord)
   
+The folders [benchmark](benchmark), [M1](M1) and [M2](M2) are the training directories for three fine-tuned models created in this project. When the the Tensorflow object detection environment is installed, these can be downloaded and trained further. Either by using the tfrecords provided in this repository ([data](data)) or by using new data. 
+  
 Welcome to the object detection inference walkthrough!  This notebook will walk you step by step through the process of using a pre-trained model to detect objects in an image. Make sure to follow the [installation instructions](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md) before you start.
