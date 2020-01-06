@@ -1,6 +1,6 @@
 ## Specialization Project
 This github repository is created as a supplementary resource to my specialization project conducted during the fall of 2019. The focus of the project was to deveolope an object detection model using the Tensorflow API in order to detect and localize cores within optical core images used in the petroleum industry.
-## Appendix
+# Appendix
 The Appendix directory contains the files mentioned in Methodology chapter of the report, as well as the data
 
 
