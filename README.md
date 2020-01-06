@@ -24,5 +24,7 @@ The folders [benchmark](benchmark), [M1](M1) and [M2](M2) are the training direc
 Assuming that both Tensorflow and the object detection environment outlined above has been downloaded and setup, the models in this repository can be trained as follows:
   * Download the desired model (e.g. [M2](M2)) and place this folder within the object_detection directory in models/research
   * Download the ([data](data)) directory or alternatively create new data. 
-  * Change the paths in the configuration file and run the train-evaluation pipeline as outlined in the project report.
+  * Change the paths in the configuration file and run the train-evaluation pipeline as outlined in the methodology chapter of the project report.
+  
+
   
