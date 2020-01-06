@@ -30,7 +30,7 @@ Assuming that both Tensorflow and the object detection environment outlined abov
   * Change the paths in the configuration file and run the train-evaluation pipeline as outlined in the methodology chapter of the project report.
   
 #### inference and cropping
-The final model can also be used in its current state for making predictions on new core images. The inference graph for the M2 model has been frozen and exported so that inference can be done on new core images, as can be seen in the modified object detection tutorial [notebook](inference/object_detection_tutorial_modified.ipynb). The notebook shows inference performed on three optical core images, and the cropped result using the predicted bounding boxes from M2. The notebook and the inference graph can be downloaded and used to perform inference with the following steps:
+The inference graph for the M2 model has been frozen and exported so that inference can be done on new core images, as can be seen in the modified object detection tutorial [notebook](inference/object_detection_tutorial_modified.ipynb). The notebook shows inference performed on three optical core images, and the cropped result using the predicted bounding boxes from M2 is saved in the [cropped_output](inference/M2_inference_graph/cropped_output) folder. The notebook and the inference graph can be downloaded and used to perform inference and cropping with the following steps:
 
   * Download the [inference](inference) folder
   * Move the [notebook](inference/object_detection_tutorial_modified.ipynb) and the [M2_inference_graph](inference/M2_inference_graph) folder into models/research/object_detection
