@@ -42,7 +42,7 @@ The inference graph for the M2 model has been frozen and exported so that infere
   * Start jupyter notebook from the object_detection directory
   * Perform inference by running the notebook
 
-NB: It may be necessary to upgrade/downgrade to tensorflow-1.15 (which was used for training) in order to run the notebook. This can be done in an virtual environment. 
+NB: It may be necessary to upgrade/downgrade to tensorflow-1.15 (which was used for training) in order to run the notebook. This can be done in an virtual environment if another tensorflow version exists on the system. If done on in a virtual environment, remember to install the necessary python dependencies.  
   
 
   
